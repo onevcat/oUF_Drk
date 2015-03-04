@@ -35,12 +35,12 @@ local cfg = CreateFrame("Frame")
 	cfg.showEclipsebar = true -- show druid Eclipse bar
 	cfg.showShardbar = true -- show Warlock SoulShard bar
 	cfg.showHarmonybar = true -- show Monk Harmony bar
-	cfg.showShadoworbsbar = true -- show Shadow Priest Shadow Orbs bar
+	cfg.showShadoworbsbar = false -- show Shadow Priest Shadow Orbs bar
 	cfg.showComboPoints = true -- show Rogue Combo Points
 --castbar
 	cfg.Castbars = true -- use built-in castbars
 	--player
-	cfg.playerCastBarOnUnitframe = true
+	cfg.playerCastBarOnUnitframe = false
 	cfg.playerCastBarX = 0
 	cfg.playerCastBarY = 200
 	cfg.playerCastBarWidth = 300
@@ -52,7 +52,7 @@ local cfg = CreateFrame("Frame")
 	cfg.targetCastBarWidth = 200
 	cfg.targetCastBarHeight = 25
 --raid&party frames
-	cfg.showRaid = true -- show raid frames
+	cfg.showRaid = false -- show raid frames
 	cfg.raidShowSolo = true -- show raid frames even when solo
 	cfg.showIncHeals = true -- Show incoming heals in player and raid frames
 	cfg.showTooltips = true -- Show Tooltips on raid frames
@@ -319,10 +319,10 @@ cfg.backdrop_edge_texture = "Interface\\AddOns\\oUF_Drk\\media\\backdrop_edge"
 cfg.debuff_border_texture = "Interface\\AddOns\\oUF_Drk\\media\\iconborder"
 
 
-cfg.font = "Interface\\AddOns\\oUF_Drk\\media\\BigNoodleTitling.ttf"
-cfg.smallfont = "Interface\\AddOns\\oUF_Drk\\media\\semplice.ttf"
-cfg.raidfont = "Interface\\AddOns\\oUF_Drk\\media\\vibroceb.ttf"
-cfg.squarefont = "Interface\\AddOns\\oUF_Drk\\media\\squares.ttf"
+cfg.font = "Fonts\\1.TTF"
+cfg.smallfont = "Fonts\\1.TTF"
+cfg.raidfont = "Fonts\\1.TTF"
+cfg.squarefont = "Fonts\\1.TTF"
 
 --do not change this
 cfg.spec = nil

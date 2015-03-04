@@ -460,10 +460,10 @@ lib.addCastBar = function(f)
 			s:SetPoint("TOPLEFT",f.Portrait,"TOPLEFT",20,.5)
 			s:SetHeight(f.Portrait:GetHeight()+1.5)
 			s:SetWidth(f:GetWidth()-37.45)
-		else
-			s:SetPoint("BOTTOM",UIParent,"BOTTOM",cfg.playerCastBarX,cfg.playerCastBarY)
-			s:SetHeight(cfg.playerCastBarHeight)
-			s:SetWidth(cfg.playerCastBarWidth)
+		-- else
+		-- 	s:SetPoint("BOTTOM",UIParent,"BOTTOM",cfg.playerCastBarX,cfg.playerCastBarY)
+		-- 	s:SetHeight(cfg.playerCastBarHeight)
+		-- 	s:SetWidth(cfg.playerCastBarWidth)
 		end
     elseif f.mystyle == "target" then
 		if cfg.targetCastBarOnUnitframe then
@@ -822,7 +822,7 @@ lib.addBossDebuffs = function(f)
     b = CreateFrame("Frame", nil, f)
     b.size = 20
 	b.num = 4
-	b.onlyShowPlayer = false
+	b.onlyShowPlayer = true
     b.spacing = 5
     b:SetHeight(b.size)
     b:SetWidth(f:GetWidth())
