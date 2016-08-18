@@ -45,7 +45,7 @@ local cfg = CreateFrame("Frame")
     cfg.showComboPoints = true -- show Rogue Combo Points
 --castbar
 
-    cfg.Castbars = true -- use built-in castbars
+    cfg.Castbars = false -- use built-in castbars
     --player
     cfg.playerCastBarOnUnitframe = false
     cfg.playerCastBarX = 0
